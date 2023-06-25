@@ -7,13 +7,14 @@ Created on Thu Jun 22 14:05:37 2023
 
 import streamlit as st
 import pickle
+import pandas as pd
 
 st.title("Apps for Prediction using Random Regressor Algorithm")
 st.write("Kindly enter the required value")
 
-# # stall_no=10
-# # mc=2
-# # Lc=1
+# stall_no=10
+# mc=2
+# Lc=1
 # pc=2
 # g=1
 # dem=51
@@ -85,7 +86,8 @@ if button:
      
      
      st.write('The prediction of Selling Price is')
-     st.write(model1.predict(a)[0])
+    
+     st.write(pd.DataFrame(model1.predict(a)))
     
 
 
