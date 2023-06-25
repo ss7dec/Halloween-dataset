@@ -13,8 +13,7 @@ import pickle
 st.title("Apps for Prediction using Random Regressor Algorithm")
 st.write("Kindly enter the required value")
 
-with open('model.pkl', 'rb') as file:
-     model = pickle.load(file)
+
 
 
 # # stall_no=10
@@ -93,8 +92,11 @@ a=[[stall,mc,Lc,pc,g,dem,da,c1,c2,mp,mxp]]
 
 button = st.button('Predict')
 if button:
-    predict = model.predict(a)
-    st.write('The prediction of Selling Price is', predict)
+     with open('model.pkl', 'rb') as file:
+          model = pickle.load(file)
+     
+     predict = model.predict(a)
+     st.write('The prediction of Selling Price is', predict)
 
 
 
