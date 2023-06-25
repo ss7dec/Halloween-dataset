@@ -85,7 +85,7 @@ if button:
      # open('model.pkl', 'rb') as file:
     model1 = joblib.load("model.pkl")
     st.write('The prediction of Selling Price is')
-    st.write(pd.DataFrame(model1.predict(a)))
+    st.write(str(model1.predict(a)[0]))
     
 
 
