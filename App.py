@@ -8,13 +8,8 @@ Created on Thu Jun 22 14:05:37 2023
 import streamlit as st
 import pickle
 
-
-
 st.title("Apps for Prediction using Random Regressor Algorithm")
 st.write("Kindly enter the required value")
-
-
-
 
 # # stall_no=10
 # # mc=2
@@ -81,14 +76,7 @@ if mp>mxp:
         # st.button("Close")
         st.button("Close")
 
-     
-
-
-
 a=[[stall,mc,Lc,pc,g,dem,da,c1,c2,mp,mxp]]
-
-
-
 
 button = st.button('predict1')
 if button:
@@ -96,7 +84,9 @@ if button:
           model1 = pickle.load(file)
      
      predict1 = model1.predict(a)
-     st.write('The prediction of Selling Price is', predict1)
+     st.write('The prediction of Selling Price is')
+     st.write(predict1[0])
+    
 
 
 
