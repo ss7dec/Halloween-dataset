@@ -83,9 +83,9 @@ if button:
      with open('model.pkl', 'rb') as file:
           model1 = pickle.load(file)
      
-     predict1 = model1.predict(a)
+     
      st.write('The prediction of Selling Price is')
-     st.write(predict1[0])
+     st.write(model1.predict(a)[0])
     
 
 
