@@ -78,7 +78,7 @@ if mp>mxp:
 
 a=[[stall,mc,Lc,pc,g,dem,da,c1,c2,mp,mxp]]
 
-button = st.button('predict1')
+button = st.button('predict')
 if button:
      with open('model.pkl', 'rb') as file:
           model1 = pickle.load(file)
