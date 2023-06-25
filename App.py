@@ -92,7 +92,7 @@ a=[[stall,mc,Lc,pc,g,dem,da,c1,c2,mp,mxp]]
 
 button = st.button('predict1')
 if button:
-     with open('model1.pkl', 'rb') as file:
+     with open('model.pkl', 'rb') as file:
           model1 = pickle.load(file)
      
      predict = model1.predict1(a)
