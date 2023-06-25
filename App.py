@@ -94,7 +94,7 @@ a=[[stall,mc,Lc,pc,g,dem,da,c1,c2,mp,mxp]]
 button = st.button('Predict')
 if button:
     predict = model.predict(a)
-    st.write('The prediction of Selling Price is', predict[0])
+    st.write('The prediction of Selling Price is', predict)
 
 
 
